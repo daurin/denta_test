@@ -20,19 +20,31 @@ class _HomePageState extends State<HomePage> with HomePageController {
     PatientsFragment(),
   ];
 
+  final List<String> titles = const [
+    'Citas',
+    'Empleados',
+    'Pacientes',
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Home'),
-        centerTitle: true,
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.logout),
-            tooltip: 'Cerrar sesión',
-            onPressed: logout,
+      appBar: PreferredSize(
+        preferredSize: const Size.fromHeight(kToolbarHeight),
+        child: ValueListenableBuilder<int>(
+          valueListenable: selectedIndexNotifier,
+          builder: (context, index, _) => AppBar(
+            title: Text(titles[index]),
+            centerTitle: true,
+            actions: [
+              IconButton(
+                icon: const Icon(Icons.logout),
+                tooltip: 'Cerrar sesión',
+                onPressed: logout,
+              ),
+            ],
           ),
-        ],
+        ),
       ),
       body: ValueListenableBuilder<int>(
         valueListenable: selectedIndexNotifier,
