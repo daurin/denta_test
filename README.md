@@ -9,3 +9,9 @@ He utilizado arquitectura limpia, la misma arquitectura que estoy utilizando ult
 - **http**: Realizar peticiones HTTP a APIs REST.
 - **get_storage**: Almacenamiento local rápido y sencillo.
 - **path_provider**: Acceso a rutas del sistema de archivos (documentos, caché, etc), get_storage lo requiere.
+
+# Acceso directo al APK
+
+Puedes descargar el archivo APK de prueba desde:
+
+- [assets/app-release.apk](assets/app-release.apk)
