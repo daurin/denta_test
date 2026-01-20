@@ -14,4 +14,4 @@ He utilizado arquitectura limpia, la misma arquitectura que estoy utilizando ult
 
 Puedes descargar el archivo APK de prueba desde:
 
-- [assets/app-release.apk](assets/app-release.apk)
+- [assets/denta_test_release.apk](assets/denta_test_release.apk)
